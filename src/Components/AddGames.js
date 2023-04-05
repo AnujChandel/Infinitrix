@@ -25,7 +25,7 @@ export default function AddGames(props) {
 
   function viewResponse(){
     var date = new Date().toLocaleString();
-    var blob = new Blob([ "orgname is: ", orgname ,"\n", "gamename is:  ", gamename  , "\n","link is:  ", link ,"\n","description is:  ", description , "\n"], { type: "text/plain;charset=utf-8" });
+    var blob = new Blob([ "Organization or Personal name is: ", orgname ,"\n", "Name of the Game is:  ", gamename  , "\n","Github link is:  ", link ,"\n","Description of the Game is:  ", description , "\n"], { type: "text/plain;charset=utf-8" });
     var newName = orgname + "--" + date + ".txt"
      SaveAs(blob, newName); 
   }
@@ -122,14 +122,14 @@ export default function AddGames(props) {
             </Button>
           </Form>
        
-      </div> ) : (<>
+      </div> ) : (<><br></br>
          <h2> <p>Thank you for submission  </p></h2>  <br></br>
          <h5> <p> We will check if the game is compatible with our system and conditions. </p></h5><br></br>
          <h5> <p> If the game is compatible, then it will be Uploaded within 7 days. </p></h5>
          <Button variant='outline-info' onClick={viewResponse} >
               View Reponse
             </Button>
-          </>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br></>
         )}
     </div>
   );

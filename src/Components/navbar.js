@@ -10,6 +10,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Unitygame from './Unitygame';
+import FoxTale from '../Games/FoxTale';
+
 export default function navbar(){
     
 return( 
@@ -36,6 +38,7 @@ return(
       <Route path="/AllGames" element={<AllGames />} />
       <Route path="/AddGame" element={<AddGames />} />
       <Route exact path="/playDemo" element = {<Unitygame/>} />
+      <Route exact path="/FoxTale" element = {<FoxTale/>} />
    </Routes>
 </Router>
   
