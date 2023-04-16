@@ -3,31 +3,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import SaveAs from 'file-saver';
-
-
+import  emailjs  from "@emailjs/browser";
 
 export default function AddGames(props) {
   const [formSubmitted, setFormSubmitted] = useState(true);
 
   const [orgname, neworgname] = useState('');
   const [gamename, newgamename] = useState('');
+  const [gmail, newgmail] = useState('');
   const [link, newlink] = useState('');
   const [description, newdescription] = useState('');
 
   function onsubmit(e) {
-    e.preventDefault();
-  
-    setFormSubmitted(false);
+    e.preventDefault();    
+    setFormSubmitted(false)
+    console.log(orgname,gmail,gamename,link,description)
+    emailjs.send('service_85v2zgc', 'template_3d907ej', {orgname,gmail,gamename,link,description}, '2NAqoZLgaMXkOiYaB')
+    alert("Details has been submitted");
     console.log( "the last updated data");
-    
-   
   }
+
 
   function viewResponse(){
     var date = new Date().toLocaleString();
-    var blob = new Blob([ "Organization or Personal name is: ", orgname ,"\n", "Name of the Game is:  ", gamename  , "\n","Github link is:  ", link ,"\n","Description of the Game is:  ", description , "\n"], { type: "text/plain;charset=utf-8" });
+    var blob = new Blob([ "Organization or Personal name is: ", orgname ,"\n", "Name of the Game is:  ",  gamename  , "\n"  , "Your Gmail:  ",  gmail  , "\n" ,"Github link is:  ", link ,"\n","Description of the Game is:  ", description , "\n"], { type: "text/plain;charset=utf-8" });
     var newName = orgname + "--" + date + ".txt"
-     SaveAs(blob, newName); 
+    SaveAs(blob, newName); 
   }
 
   const handleInputChangeorgname = (e) => {
@@ -39,6 +40,10 @@ export default function AddGames(props) {
     console.log("gamename:" ,gamename);
   };
     
+  const handleInputChangegmail = (e) => {
+    newgmail(e.target.value);
+    console.log("gmail:" ,gmail);
+  };
     const handleInputChangelink = (e) => {
     newlink(e.target.value);
     console.log("link:" , link);
@@ -48,6 +53,8 @@ export default function AddGames(props) {
     newdescription(e.target.value);
     console.log("description:",description);
   }
+
+
 
   return (
     <div className='container'>
@@ -82,6 +89,19 @@ export default function AddGames(props) {
               />
               <p> </p>
             </Form.Group>
+
+            <Form.Group>
+              <Form.Label>Enter your Gmail Account:</Form.Label>
+              <Form.Control
+                type='email'
+                onChange={handleInputChangegmail}
+                
+                value={gmail}
+                placeholder='Enter here'
+              />
+              <p> </p>
+            </Form.Group>
+
             <Form.Group>
               <Form.Label>Enter your Game name:</Form.Label>
               <Form.Control
@@ -117,7 +137,7 @@ export default function AddGames(props) {
               />
               <p> </p>
             </Form.Group>
-            <Button variant='primary' type='submit'>
+            <Button variant='primary' type='submit' >
               Submit
             </Button>
           </Form>
