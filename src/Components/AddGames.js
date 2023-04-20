@@ -137,7 +137,17 @@ export default function AddGames(props) {
               />
               <p> </p>
             </Form.Group>
-            <Button variant='primary' type='submit' >
+            <Button variant='primary' style={{ background: 'linear-gradient(to right, #f78ca0, #f9748f, #fd868c, #fe9a8b, #feca8a, #f9d989, #f7e988, #f7f987)', 
+                  marginLeft: "-10px",
+                  border: 'none',
+                  color: 'white',
+                  padding: '15px 32px',
+                  textAlign: 'center',
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  fontSize: '16px',
+                  margin: '4px 2px',
+                  cursor: 'pointer'}} type='submit' >
               Submit
             </Button>
           </Form>
