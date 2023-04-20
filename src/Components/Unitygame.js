@@ -1,25 +1,29 @@
 import React from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 export default function Unitygame() {
-   const { unityProvider } = useUnityContext({
-     loaderUrl: "/myunityapp.loader.js",
-     dataUrl: "/myunityapp.data",
-     frameworkUrl: "/myunityapp.framework.js",
-     codeUrl: "/myunityapp.wasm",
-   })
+  const { unityProvider } = useUnityContext({
+    loaderUrl: "/myunityapp.loader.js",
+    dataUrl: "/myunityapp.data",
+    frameworkUrl: "/myunityapp.framework.js",
+    codeUrl: "/myunityapp.wasm",
+  });
 
   return (
-  <div className="container">
-    <p>  <b>Games By unity</b></p><p></p>
-  <Unity
-  style={{
-    width:"90%"
-  }}
-      unityProvider={unityProvider} />
-
-  </div>
-);
+    <div className="container">
+      <p>
+        {" "}
+        <b>Games By unity</b>
+      </p>
+      <p></p>
+      <Unity
+        style={{
+          width: "90%",
+        }}
+        unityProvider={unityProvider}
+      />
+    </div>
+  );
 }
