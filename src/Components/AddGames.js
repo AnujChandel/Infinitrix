@@ -19,12 +19,12 @@ export default function AddGames(props) {
     e.preventDefault();
     setFormSubmitted(false);
     console.log(orgname, gmail, gamename, link, description);
-    /*   emailjs.send(
+    emailjs.send(
       "service_85v2zgc",
       "template_3d907ej",
       { orgname, gmail, gamename, link, description },
       "2NAqoZLgaMXkOiYaB"
-    );*/
+    );
     alert("Details has been submitted");
     console.log("the last updated data");
   }
