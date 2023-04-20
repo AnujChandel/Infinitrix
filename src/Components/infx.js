@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Bgimg from "../ImagesandVideos/bgimage.jpg";
 import Video from "../ImagesandVideos/video.mp4";
 import { Link } from "react-router-dom";
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
   export default function infx(){
@@ -28,23 +29,10 @@ import { Link } from "react-router-dom";
                   We create innovative software that empowers 2D Games growth and success.
                 </p>
                 <Link to="/playDemo">
-                <button
-                  className="btn"
-                  style={{ background: 'linear-gradient(to right, #f78ca0, #f9748f, #fd868c, #fe9a8b, #feca8a, #f9d989, #f7e988, #f7f987)', 
-                  marginLeft: "-10px",
-                  border: 'none',
-                  color: 'white',
-                  padding: '15px 32px',
-                  textAlign: 'center',
-                  textDecoration: 'none',
-                  display: 'inline-block',
-                  fontSize: '16px',
-                  margin: '4px 2px',
-                  cursor: 'pointer'
-                 }}
-                >
-                  Play Demo
-                </button></Link>
+                <MDBBtn style={{ background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))' }}>
+                Play Demo
+                  </MDBBtn>
+                </Link>
               </div>
               <div className="col-md-6">
                 <div style={{ paddingTop: "5px", paddingBottom: "5px" }}>
