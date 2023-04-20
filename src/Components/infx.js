@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Video from "../ImagesandVideos/video.mp4";
 import { Link } from "react-router-dom";
 import "./Pdbton.css";
-import "./Btun.css";
+import { Button } from "react-bootstrap";
 
 export default function infx() {
   return (
@@ -29,7 +29,7 @@ export default function infx() {
             success.
           </p>
           <Link to="/playDemo">
-            <pdbton>PLAY DEMO</pdbton>
+            <Button className="pdbton">PLAY DEMO</Button>
           </Link>
         </div>
         <div className="col-md-6">

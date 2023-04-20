@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import "./Btun.css";
+import { Button } from "react-bootstrap";
 
 export default function Features() {
   return (
@@ -21,7 +22,7 @@ export default function Features() {
                 A 2D Platformer game to enjoy the difficulties and challenges.
               </Card.Text>
               <Link to="/FoxTale">
-                <bton>PLAY NOW</bton>
+                <Button className="bton">PLAY NOW</Button>
               </Link>
             </Card.Body>
           </Card>
@@ -36,7 +37,7 @@ export default function Features() {
                 With supporting text below as a natural lead-in to additional
                 content.
               </Card.Text>
-              <bton>COMING SOON</bton>
+              <Button className="bton">COMING SOON</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -50,7 +51,7 @@ export default function Features() {
                 With supporting text below as a natural lead-in to additional
                 content.
               </Card.Text>
-              <bton>COMING SOON</bton>
+              <Button className="bton">COMING SOON</Button>
             </Card.Body>
           </Card>
         </Col>

@@ -4,6 +4,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import SaveAs from "file-saver";
 import emailjs from "@emailjs/browser";
+import "./Subbtn.css";
+import "./outlinebtn.css";
 
 export default function AddGames(props) {
   const [formSubmitted, setFormSubmitted] = useState(true);
@@ -17,12 +19,12 @@ export default function AddGames(props) {
     e.preventDefault();
     setFormSubmitted(false);
     console.log(orgname, gmail, gamename, link, description);
-    emailjs.send(
+    /*   emailjs.send(
       "service_85v2zgc",
       "template_3d907ej",
       { orgname, gmail, gamename, link, description },
       "2NAqoZLgaMXkOiYaB"
-    );
+    );*/
     alert("Details has been submitted");
     console.log("the last updated data");
   }
@@ -152,7 +154,7 @@ export default function AddGames(props) {
               />
               <p> </p>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button type="submit" className="subbtn">
               Submit
             </Button>
           </Form>
@@ -181,9 +183,9 @@ export default function AddGames(props) {
               If the game is compatible, then it will be Uploaded within 7 days.{" "}
             </p>
           </h5>
-          <Button variant="outline-info" onClick={viewResponse}>
+          <outbtn variant="outline-info" onClick={viewResponse}>
             View Reponse
-          </Button>
+          </outbtn>
           <br></br>
           <br></br>
           <br></br>

@@ -1,4 +1,4 @@
-bton {
+.bton {
   margin-left: -10px;
   margin: 4px 2px;
   border: "none";
@@ -22,7 +22,7 @@ bton {
   border-radius: 5px;
   z-index: 1;
 }
-bton:hover {
+.bton:hover {
   animation: animate 8s linear infinite;
 }
 @keyframes animate {
@@ -36,7 +36,7 @@ bton:hover {
     background-position: 0% 50%;
   }
 }
-bton:before {
+.bton:before {
   content: "";
   position: absolute; /* remove this to remove Cards background glow */
   top: -5px;
@@ -50,7 +50,7 @@ bton:before {
   opacity: 0;
   transition: 0.5%;
 }
-bton:hover:before {
+.bton:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 10s linear infinite;
