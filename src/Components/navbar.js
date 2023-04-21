@@ -19,7 +19,7 @@ export default function navbar() {
         <Navbar bg="black" variant="dark">
           <Container>
             <Navbar.Brand as={Link} to={"/"}>
-              Infinitrix
+              INFINITRIX
             </Navbar.Brand>
             <Nav className="ms-auto">
               <Nav.Link as={Link} to={"/Home"}>

@@ -1,16 +1,16 @@
-.pdbton {
+.subbtn {
   margin-left: -10px;
   margin: 4px 2px;
   border: "none";
   color: white;
-  padding: 15px 25px;
+  padding: 8px 18px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
   background: linear-gradient(
-    -45deg,
+    -90deg,
     #ff3d77,
     #ffbe3d,
     #17bc7f,
@@ -22,7 +22,7 @@
   border-radius: 5px;
   z-index: 1;
 }
-.pdbton:hover {
+.subbtn:hover {
   animation: animate 8s linear infinite;
 }
 @keyframes animate {
@@ -36,7 +36,7 @@
     background-position: 0% 50%;
   }
 }
-.pdbton:before {
+.subbtn:before {
   content: "";
 
   top: -5px;
@@ -50,7 +50,7 @@
   opacity: 0;
   transition: 0.5%;
 }
-.pdbton:hover:before {
+.subbtn:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 10s linear infinite;

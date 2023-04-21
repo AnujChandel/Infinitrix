@@ -1,16 +1,16 @@
-.subbtn {
+.bton {
   margin-left: -10px;
   margin: 4px 2px;
   border: "none";
   color: white;
-  padding: 11px 20px;
+  padding: 8px 18px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
   cursor: pointer;
   background: linear-gradient(
-    -90deg,
+    -45deg,
     #ff3d77,
     #ffbe3d,
     #17bc7f,
@@ -22,7 +22,7 @@
   border-radius: 5px;
   z-index: 1;
 }
-.subbtn:hover {
+.bton:hover {
   animation: animate 8s linear infinite;
 }
 @keyframes animate {
@@ -36,9 +36,9 @@
     background-position: 0% 50%;
   }
 }
-.subbtn:before {
+.bton:before {
   content: "";
-
+  position: absolute; /* remove this to remove Cards background glow */
   top: -5px;
   left: -5px;
   right: -5px;
@@ -50,7 +50,7 @@
   opacity: 0;
   transition: 0.5%;
 }
-.subbtn:hover:before {
+.bton:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 10s linear infinite;

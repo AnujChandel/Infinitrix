@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Video from "../ImagesandVideos/video.mp4";
 import { Link } from "react-router-dom";
-import "./Pdbton.css";
+import "./AllCSS/Pdbton.css";
 import { Button } from "react-bootstrap";
 
 export default function infx() {

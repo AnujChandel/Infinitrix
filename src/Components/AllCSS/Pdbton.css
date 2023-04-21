@@ -1,9 +1,9 @@
-.bton {
+.pdbton {
   margin-left: -10px;
   margin: 4px 2px;
   border: "none";
   color: white;
-  padding: 15px 25px;
+  padding: 8px 18px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -22,7 +22,7 @@
   border-radius: 5px;
   z-index: 1;
 }
-.bton:hover {
+.pdbton:hover {
   animation: animate 8s linear infinite;
 }
 @keyframes animate {
@@ -36,9 +36,9 @@
     background-position: 0% 50%;
   }
 }
-.bton:before {
+.pdbton:before {
   content: "";
-  position: absolute; /* remove this to remove Cards background glow */
+
   top: -5px;
   left: -5px;
   right: -5px;
@@ -50,7 +50,7 @@
   opacity: 0;
   transition: 0.5%;
 }
-.bton:hover:before {
+.pdbton:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 10s linear infinite;

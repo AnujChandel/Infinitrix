@@ -5,12 +5,12 @@ outbtn {
   color: rgb(2, 217, 255);
   position: relative;
   z-index: 1;
-  font-size: 14px;
-  padding: 17px 25px;
+  font-size: 12px;
+  padding: 10px 20px;
   font-weight: 100;
   text-transform: uppercase;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 outbtn:before,

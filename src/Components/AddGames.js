@@ -4,8 +4,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import SaveAs from "file-saver";
 import emailjs from "@emailjs/browser";
-import "./Subbtn.css";
-import "./outlinebtn.css";
+import "./AllCSS/Subbtn.css";
+import "./AllCSS/outlinebtn.css";
 
 export default function AddGames(props) {
   const [formSubmitted, setFormSubmitted] = useState(true);

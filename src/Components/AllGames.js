@@ -5,7 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import "./Btun.css";
+import "./AllCSS/Btun.css";
+
 import { Button } from "react-bootstrap";
 
 export default function Features() {
