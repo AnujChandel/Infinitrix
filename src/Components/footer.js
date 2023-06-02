@@ -64,7 +64,7 @@ export default function Footer() {
           </section>
         </div>
         <div className="text-center text-light p-3">
-          © 2023 Infinitrix.com. All rights reserved.
+          © 2023 Infinitrix.com All rights reserved.
         </div>
       </footer>
     </Router>
