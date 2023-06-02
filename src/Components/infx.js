@@ -12,21 +12,24 @@ export default function infx() {
         <div className="col-md-6 text-center mb-4 mb-md-0">
           <h2>Welcome to My Small Gaming Company</h2>
           <p>
-            We create innovative software that empowers 2D Games growth and
-            success.
+            Dive into a world of immersive experiences and endless entertainment
+            on our gaming platform.
           </p>
           <p>
-            We create innovative software that empowers 2D Games growth and
-            success.
+            Browse through our extensive library of games, ranging from
+            action-packed adventures to mind-bending puzzles.
           </p>
           <p>
-            We create innovative software that empowers 2D Games growth and
-            success.
+            Connect with fellow gamers, share experiences, and participate in
+            lively discussions on our vibrant forums.
           </p>
-          <p>Create innovative software that empowers 2D Games success.</p>
           <p>
-            We create innovative software that empowers 2D Games growth and
-            success.
+            Get the latest news, updates, and announcements about your favorite
+            games and upcoming releases.
+          </p>
+          <p>
+            Unlock new levels of skill and achievement with our innovative
+            software designed to enhance your gaming performance.
           </p>
           <Link to="/playDemo">
             <Button className="pdbton">PLAY DEMO</Button>

@@ -4,62 +4,72 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function About() {
   return (
     <div className="container">
-      <h3>About Us</h3>
-      <p>
-        A company's true character shines through in the memories and
-        associations its name conjures up. The origin of Cotopaxi’s name is an
-        excellent spot to begin explaining the company's history.
-      </p>
-      <p>
-        The main concept the company wants you to take away is its commitment to
-        creating sustainable outdoor clothes and doing good.
-      </p>
-      <p>
-        The ‘About Us’ page of Ceros is interactive and compelling. You can see
-        a chronology of the company's accomplishments beginning in 2006 as you
-        scroll down the page.
-      </p>
-      <p>
-        Following that, there is a long list of accolades awarded to the
-        company. Ceros is the brand of choice for those looking for jobs.
-      </p>
-      <p>
-        The use of ratings from Glassdoor inspires trust from readers, while the
-        use of emojis adds a playful element that goes with their mission
-        statement to “inspire and unlock creativity.”
-      </p>
-      <p>
-        Davis Smith, the founder of the company, spent his formative years in
-        Ecuador, and a mountain he grew up near helped inspire the business's
-        moniker.
-      </p>
-      <p>
-        Ceros keeps the text on the page short and sweet, with powerful
-        statements like “liberating technology” by unlocking creativity. It
-        catches the reader's attention and makes them want to know more about
-        their work.
-      </p>
-      <p>
-        Hardware store chain Home Depot’s example here is straightforward, yet
-        infuses strong imagery and the brand’s voice and tone well to rise above
-        being generic.
-      </p>
-      <p>
-        For example, rather than a basic “About Home Depot” headline, it works
-        in language that appeals to their brand (being built from “right
-        materials,” an appropriate allusion for a hardware store).
-      </p>
-      <p>
-        The company's logo is a representation of the company's commitment to
-        sustainability. The logo is a representation of the company's commitment
-        to create sustainable outdoor clothes and doing good.
-      </p>
-      <p>
-        One small touch to take away from Toyota is considering putting people
-        front and center, rather than products, on these pages (they’re about
-        the people that make up your company, as much as they’re about what you
-        make or sell, after all).
-      </p>
+      <section style={styles.aboutUs}>
+        <div style={styles.aboutUsContent}>
+          <h2 style={styles.heading}>About Us</h2>
+          <p>
+            At <span style={styles.brand}>INFINITRIX</span>, we are dedicated to
+            revolutionizing the gaming industry and providing an unparalleled
+            gaming experience for players worldwide. With our innovative
+            approach and cutting-edge technology, we strive to push the
+            boundaries of what's possible in the world of gaming.
+          </p>
+          <p>
+            Our mission is to create a platform that caters to gamers of all
+            levels and interests. Whether you're a casual player looking for
+            quick and fun games or a competitive gamer seeking intense
+            challenges, <span style={styles.brand}>INFINITRIX</span> has
+            something for everyone. We curate a vast collection of games
+            spanning various genres, ensuring there's always a game that suits
+            your preferences.
+          </p>
+          <p>
+            We believe that gaming is not just a hobby; it's a passion that
+            brings people together. That's why we foster a strong and inclusive
+            gaming community where players can connect, interact, and share
+            their experiences. Join our forums, engage in lively discussions,
+            and make new friends who share your love for gaming.
+          </p>
+          <p>
+            At <span style={styles.brand}>INFINITRIX</span>, we prioritize the
+            user experience above everything else. Our platform is designed to
+            be intuitive, user-friendly, and visually stunning. We continuously
+            invest in the latest technologies to deliver seamless gameplay,
+            high-quality graphics, and immersive sound effects. We are committed
+            to providing a secure and reliable gaming environment where you can
+            focus on what you enjoy most – gaming.
+          </p>
+          <p>
+            Join us at <span style={styles.brand}>INFINITRIX</span> and embark
+            on an endless journey of gaming excitement. Get ready to explore
+            captivating worlds, challenge your skills, and unlock your true
+            gaming potential. Together, let's redefine what it means to be a
+            gamer.
+          </p>
+          <p>
+            Thank you for choosing <span style={styles.brand}>INFINITRIX</span>.
+            We can't wait to embark on this gaming adventure with you!
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
+
+const styles = {
+  aboutUs: {
+    padding: "50px",
+  },
+  aboutUsContent: {
+    maxWidth: "800px",
+    margin: "0 auto",
+  },
+  heading: {
+    color: "black",
+    fontSize: "36px",
+    marginBottom: "30px",
+  },
+  brand: {
+    fontWeight: "bold",
+  },
+};
