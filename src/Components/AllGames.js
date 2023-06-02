@@ -57,6 +57,22 @@ export default function Features() {
           </Card>
         </Col>
       </Row>
+      <Row>
+        <Col md={4}>
+          {" "}
+          <Card className="text-center mt-3 mb-3">
+            <Card.Header>Platformer</Card.Header>
+            <Card.Body>
+              <Card.Title>Coming Soon</Card.Title>
+              <Card.Text>
+                With supporting text below as a natural lead-in to additional
+                content.
+              </Card.Text>
+              <Button className="bton">COMING SOON</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
   );
 }
